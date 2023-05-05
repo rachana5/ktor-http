@@ -19,8 +19,7 @@ fun Route.customerRouting() {
                     call.respond(HttpStatusCode.NotModified)
                 } else {
                     call.respond(customerStorage)
-                }
-                call.respond(customerStorage)
+                }           
             } else {
                 call.respondText("No customers found", status = HttpStatusCode.OK)
             }
